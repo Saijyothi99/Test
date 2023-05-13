@@ -1,0 +1,31 @@
+1683726822591	geckodriver	INFO	Listening on 127.0.0.1:65342
+1683726825699	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65343" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\setti\\AppData\\Local\\Temp\\rust_mozprofileDJVQxs"
+1683726826536	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1683726826537	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1683726826537	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1683726828685	Marionette	INFO	Listening on port 65354
+1683726828955	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://demo.automationtesting.in/angcontroller.js, line 6: ReferenceError: angular is not defined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-cookies.js, line 24: TypeError: angular is undefined
+JavaScript error: https://demo.automationtesting.in/ui-grid.js, line 8: ReferenceError: angular is not defined
+JavaScript error: https://ads.as.criteo.com/delivery/r/afr.php?z=ZFuh8wAHGLUKXAGTAAIt7SQqQaUnJb7ARfhxGw&u=%7CYb%2F%2FhiTBnb2rrY68TihriwQSn90KsARCjoJXPQsAmjY%3D%7C&c1=0n2XosTo5cm2a-Hcp7XBswXP_Pnh5wGNJFnD5UhbQqfOSxiZ3nhhcqMBhL_lZw9usTLVfAM6d9L12hSPEA3USzhyfSiFtVPuFntYfNDHkozuK7dmCTswRGKLBYIJodH-M1Oq5jilZL6aQb83nw2zKHIP6E2XPNORlYnxn3Cv0jrnuxpj_9htTBnyx0f-dvzn5xIZ4RI-8MfmdnTz2qHaobix5TfxW_g2OpoFRjEAkW2Iyfc_Wsg1zYlp2HY_otPcgfIPFGczQJSEFAovjRnkJdZgBYjYkYm2TNcnGBKCZl_jgkuHoF-nd7UgcXEZlIzDHfp9D621_xNfbXD41TG1-3t9FvdqjWr9S1HFxrclL4QYf3hlOEyDPMfTOlvRGozuoYHc1usy3WWiQ21nBYRwTmavhMrX-jwnw9vfElr22lYm0eZoNXdRRs5hT7wcJzztUkYKl_m_DSrGaTHn-XoJLxJiSwOUpJID9kwKLUF618lIwI0cSJOXeEgMtSObpUb5a-7-x5rFWU1XhpbG6ONA6980n3-GkmYELCbAEefkA-5cwOMUSEMR3NFpar5XBzExqljYWC8tLlFzLlhVJXbiJhT6QHjInhlK&ct0=https://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DChz6g86FbZLWxHJOD8ALt24jgAq7k1LFc-YTU0KUDwI23ARABIABg5crlg7QOggEXY2EtcHViLTkxNzM4NjYxODUwNjQwNzHIAQmpAkaLTJ71PUo-qAMBqgTrAU_QAky8KGvA7DgxI1veaDsW8MT5JPlbGX-3ww_RkgIBpL-sUDvULDD1_hnXNESbORBGCPbPYR2T1DsNs6eAG2COHBsph4YqxXS0JP5cXXh9WWj_r0vcihmAq6e87DEuK9vm4Q1blV_MFMMua5BgNdnATFiD04XWy0RGvG0jtLeGsJmhiOkS-8Tkx3CjD8UvEkrrMPMLhGwLWL0tQM6sR0UvpbWZB2uEN_UcnGrgrN875_1SfQXtyHbz93VKUT2dMMk4qwiqGhTxSKcBVlyig_4NNd7MkmUOPNJMAkSXM5avxtait_8Xlh_eFXyABobC0Prn0o6BM6AGIagHpr4bqAeW2BuoB6qbsQKoB4OtsQKoB_-esQKoB9-fsQLYBwDSCA0IgGEQATICigI6AoBA-gsCCAGADAHQFQGAFwE%26num%3D1%26sig%3DAOD64_1K5WCqymMEMGn78zIT8-9_zl7GCQ%26client%3Dca-pub-9173866185064071%26adurl%3D, line 25: TypeError: isCrossOriginIsolated is undefined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: /buckets/monitor/collections/changes/records?_expected=%221683709034366%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+[Parent 28512, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 23616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 23616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 28512, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+1683730252567	Marionette	INFO	Stopped listening on port 65354
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

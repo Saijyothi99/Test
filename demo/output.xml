@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230511 20:19:33.899" rpa="false" schemaversion="3">
+<suite id="s1" name="TC2" source="C:\Users\setti\PycharmProjects\rbotframework\demo\TC2.robot">
+<test id="s1-t1" name="Check the whether user is able to login with valid credntilas displaying in the homepage" line="11">
+<kw name="jyothi">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 20:19:34.169" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<msg timestamp="20230511 20:19:34.169" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230511 20:19:34.169" endtime="20230511 20:19:38.490"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 20:19:38.491" endtime="20230511 20:19:38.606"/>
+</kw>
+<status status="PASS" starttime="20230511 20:19:34.169" endtime="20230511 20:19:38.606"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230511 20:19:40.606" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230511 20:19:38.606" endtime="20230511 20:19:40.606"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='login2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230511 20:19:40.606" level="INFO">Clicking element 'xpath://a[@id='login2']'.</msg>
+<status status="PASS" starttime="20230511 20:19:40.606" endtime="20230511 20:19:40.660"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:loginusername</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 20:19:40.662" level="INFO">Typing text 'demo' into text field 'id:loginusername'.</msg>
+<msg timestamp="20230511 20:19:40.962" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230511 20:19:40.962" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00328893+48451]
+	(No symbol) [0x002BB8A1]
+	(No symbol) [0x001C4F20]
+	(No symbol) [0x001EAECA]
+	(No symbol) [0x0020A2BC]
+	(No symbol) [0x001E9586]
+	(No symbol) [0x0020A614]
+	(No symbol) [0x0021C482]
+	(No symbol) [0x0020A0B6]
+	(No symbol) [0x001E7E08]
+	(No symbol) [0x001E8F2D]
+	GetHandleVerifier [0x00588E3A+2540266]
+	GetHandleVerifier [0x005C8959+2801161]
+	GetHandleVerifier [0x005C295C+2776588]
+	GetHandleVerifier [0x003B2280+612144]
+	(No symbol) [0x002C4F6C]
+	(No symbol) [0x002C11D8]
+	(No symbol) [0x002C12BB]
+	(No symbol) [0x002B4857]
+	BaseThreadInitThunk [0x76147D49+25]
+	RtlInitializeExceptionChain [0x76FCB74B+107]
+	RtlClearBits [0x76FCB6CF+191]
+</msg>
+<status status="FAIL" starttime="20230511 20:19:40.661" endtime="20230511 20:19:40.965"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:loginpassword</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230511 20:19:40.965" endtime="20230511 20:19:40.965"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20230511 20:19:40.966" endtime="20230511 20:19:40.966"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="logInModal"]/div/div/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230511 20:19:40.966" endtime="20230511 20:19:40.966"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230511 20:19:40.966" endtime="20230511 20:19:40.966"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://a[@id='nameofuser']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230511 20:19:40.966" endtime="20230511 20:19:40.966"/>
+</kw>
+<tag>regression</tag>
+<status status="FAIL" starttime="20230511 20:19:34.169" endtime="20230511 20:19:40.966">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=113.0.5672.93)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00328893+48451]
+	(No symbol) [0x002BB8A1]
+	(No symbol) [0x001C4F20]
+	(No symbol) [0x001EAECA]
+	(No symbol) [0x0020A2BC]
+	(No symbol) [0x001E9586]
+	(No symbol) [0x0020A614]
+	(No symbol) [0x0021C482]
+	(No symbol) [0x0020A0B6]
+	(No symbol) [0x001E7E08]
+	(No symbol) [0x001E8F2D]
+	GetHandleVerifier [0x00588E3A+2540266]
+	GetHandleVerifier [0x005C8959+2801161]
+	GetHandleVerifier [0x005C295C+2776588]
+	GetHandleVerifier [0x003B2280+612144]
+	(No symbol) [0x002C4F6C]
+	(No symbol) [0x002C11D8]
+	(No symbol) [0x002C12BB]
+	(No symbol) [0x002B4857]
+	BaseThreadInitThunk [0x76147D49+25]
+	RtlInitializeExceptionChain [0x76FCB74B+107]
+	RtlClearBits [0x76FCB6CF+191]
+</status>
+</test>
+<status status="FAIL" starttime="20230511 20:19:33.907" endtime="20230511 20:19:40.967"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC2">TC2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

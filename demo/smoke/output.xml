@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230511 19:36:09.656" rpa="false" schemaversion="3">
+<suite id="s1" name="TC2" source="C:\Users\setti\PycharmProjects\rbotframework\demo\TC2.robot">
+<test id="s1-t1" name="Check the contents displaying in the homepage" line="7">
+<kw name="jyothi">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 19:36:09.983" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<msg timestamp="20230511 19:36:09.986" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230511 19:36:09.982" endtime="20230511 19:36:12.983"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 19:36:12.983" endtime="20230511 19:36:13.221"/>
+</kw>
+<status status="PASS" starttime="20230511 19:36:09.982" endtime="20230511 19:36:13.222"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>STORE</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230511 19:36:13.332" level="INFO">Page title is 'STORE'.</msg>
+<status status="PASS" starttime="20230511 19:36:13.222" endtime="20230511 19:36:13.332"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230511 19:36:09.981" endtime="20230511 19:36:13.333"/>
+</test>
+<test id="s1-t2" name="Check the whether user is able to login with valid credntilas displaying in the homepage" line="11">
+<kw name="jyothi">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230511 19:36:13.337" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<msg timestamp="20230511 19:36:13.343" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230511 19:36:13.336" endtime="20230511 19:36:16.111"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230511 19:36:16.111" endtime="20230511 19:36:16.341"/>
+</kw>
+<status status="PASS" starttime="20230511 19:36:13.336" endtime="20230511 19:36:16.345"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@id='login2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230511 19:36:16.350" level="INFO">Clicking element 'xpath://a[@id='login2']'.</msg>
+<status status="PASS" starttime="20230511 19:36:16.349" endtime="20230511 19:36:16.695"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:loginusername</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 19:36:16.723" level="INFO">Typing text 'demo' into text field 'id:loginusername'.</msg>
+<status status="PASS" starttime="20230511 19:36:16.723" endtime="20230511 19:36:17.236"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:loginpassword</arg>
+<arg>demo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230511 19:36:17.281" level="INFO">Typing text 'demo' into text field 'id:loginpassword'.</msg>
+<status status="PASS" starttime="20230511 19:36:17.272" endtime="20230511 19:36:17.520"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230511 19:36:17.522" endtime="20230511 19:36:17.531"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="logInModal"]/div/div/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230511 19:36:17.532" level="INFO">Clicking element 'xpath://*[@id="logInModal"]/div/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20230511 19:36:17.532" endtime="20230511 19:36:17.584"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230511 19:36:22.588" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230511 19:36:17.587" endtime="20230511 19:36:22.588"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://a[@id='nameofuser']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230511 19:36:22.620" level="INFO">Element 'xpath://a[@id='nameofuser']' is displayed.</msg>
+<status status="PASS" starttime="20230511 19:36:22.588" endtime="20230511 19:36:22.621"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" starttime="20230511 19:36:13.335" endtime="20230511 19:36:22.621"/>
+</test>
+<status status="PASS" starttime="20230511 19:36:09.669" endtime="20230511 19:36:22.623"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC2">TC2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
